@@ -1,0 +1,36 @@
+{
+	"auth": [
+		"email",
+		"password"
+	],
+	"users": [
+		{
+			"id": "001",
+			"email": {"email":"", "password":""},
+			"roles": {
+				"admin": true,
+				"chef": false,
+				"waiter": false
+			}
+		},
+		{
+			"id": "002",
+			"email": {"email":"", "password":""},
+			"roles": {
+				"admin": false,
+				"chef": true,
+				"waiter": false
+			}
+		},
+		{
+			"id": "003",
+			"email": {"email":"", "password":""},
+			"roles": {
+				"admin": false,
+				"chef": false,
+				"waiter": true
+			}
+		}
+	]
+}
+
