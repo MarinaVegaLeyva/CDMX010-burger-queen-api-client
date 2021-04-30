@@ -1,0 +1,108 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+.headerBQ {
+	background-image: url('../../assets/img/fondo.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: 8vh;
+	padding: 4% 5% 5% 5%;
+	display: flex;
+	flex-direction: row;
+	position:fixed;
+	top : 0%;
+
+}
+.textLogo {
+	font-family: 'Bungee';
+	font-size: 58px;
+	color: white;
+	align-self: center;
+	height: auto;
+
+}
+
+.logoBQ {
+	width: 10%;
+	align-self: center;
+	height: auto;
+}
+
+.burgerMenu {
+	align-self: center;
+	position: absolute;
+	right: 7%;
+
+
+}
+.menuIcon {
+	width: 180px;
+	justify-self: flex-end;
+	cursor: pointer;	
+}
+
+@media (min-width: 800px) and (orientation: landscape){
+	.headerBQ {
+		min-width: 100vh;
+		height: 75px;
+		padding: 2%;
+		display: flex;
+		flex-direction: row;
+	}
+	.textLogo {
+		font-size: 55px;
+	}
+	.logoBQ {
+		width: 9%;
+	}
+	.menuIcon {
+		width: 130px;
+		justify-self: flex-end;	
+	}
+	.burgerMenu {
+		right: 5%;
+	}
+}
+
+
+@media(max-width: 400px){
+	.headerBQ {
+		padding: 4% 5% 5% 5%;
+	}
+	.textLogo {
+		font-size: x-large;
+	}
+	.logoBQ {
+		width: 9%;
+	}
+	.menuIcon {
+		width: 80px;
+		justify-self: flex-end;	
+	}
+	.burgerMenu {
+		right: 8%;
+	}
+}
+
+
+@media(orientation: landscape) and (max-width: 799px){
+	.headerBQ {
+		padding: 4% 5% 4% 5%;
+		height: 3vh;
+	}
+	.textLogo {
+		font-size: x-large;
+	}
+	.logoBQ {
+		width: 9%;
+	}
+	.menuIcon {
+		width: 70px;
+		justify-self: flex-end;	
+	}
+	.burgerMenu {
+		right: 10%;
+}
+}
