@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+.logoLoginBQ {
+	min-width: 30%;
+}
+
+.logoImg-container{
+	width: 100vw;
+	display:flex ;
+	justify-content: center;
+	margin-top: 20%;
+	margin-bottom: 10%;
+}
+
+@media (min-width: 800px) and (orientation: landscape){
+	.logoImg-container{
+		width: 100vw;
+		margin-top: 8%;
+		margin-bottom: 2%;
+	}
+
+	.logoLoginBQ {
+	min-width: 60vw;
+}
+}
+
+@media(max-width: 400px){
+	.logoImg-container{
+		min-width: 80vw;
+		margin-top: 25%;
+		margin-bottom: 17%;
+	}
+}
+
+/* @media(orientation: landscape) and (max-width: 799px){
+	.logoImg-container{
+		width: 100vw;
+		margin-top: 6%;
+		margin-bottom: 2%;
+	}
+
+	.logoBQ {
+	min-width: 40%
+}
+} */
+
+
+
+@media(orientation: landscape) and (max-width: 799px){
+	.logoImg-container{
+		width: 50%;
+		margin-top: 0%;
+		margin-bottom: 0%;
+	}
+
+	.logoLoginBQ {
+	min-width: 43%;
+	position:absolute;
+	top:20%;
+	left:5%;
+}
+}
+
+
+/* .textLogo-burger, .textLogo-queen {
+	font-family: 'Bungee';
+	font-size: 95px;
+	color: white;
+	margin: 0%;
+	padding: 0%;
+	text-align: center;
+	width: 100vw;
+	
+} */
+/* .logoBQ {
+	width: 14%;
+} */
+
+/* .logoContainer {
+	background-image: url('../../assets/img/fondo.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center; 
+	width: 100vw;
+
+	padding-left: 2%;
+	padding-right: 2%;
+} */
