@@ -32,7 +32,6 @@ const OrderInProgressCard = () => {
 						<TemplateModalInProgress/>
 					</div>
 				</div>
-				
 			}
 		</div>
 	)

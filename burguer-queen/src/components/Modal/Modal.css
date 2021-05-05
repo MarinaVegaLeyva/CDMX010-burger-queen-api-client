@@ -1,6 +1,7 @@
 
 
 .modal-container {
+	display: block;
 	background-color: rgba(216, 211, 225, 1);
 	position: fixed; 
 	top: 15%;
