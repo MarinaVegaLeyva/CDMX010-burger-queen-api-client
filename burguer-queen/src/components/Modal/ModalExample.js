@@ -10,7 +10,7 @@ function ModalExample (Template){
 		<div>
 			<button onClick={() => setModalIsOpen(true)}>Modal</button>
 			<Modal isOpen={modalIsOpen}>
-				<Template/>
+				<div>holaaaa</div>
 				<div>
 					<button onClick={() => setModalIsOpen(false)}>close</button>
 				</div>

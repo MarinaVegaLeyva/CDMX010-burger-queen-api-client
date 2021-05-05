@@ -1,9 +1,12 @@
-import './OrderInProgressCard.css';
 import React from 'react';
-import { useState } from 'react';
-import ReactDOM from 'react-dom';
+import './OrderInProgressCard.css';
+import TemplateModalInProgress from '../OrderModalTemplates/TemplateModalInProgress';
 
-import { Modal }from '../../Modal/Modal';
+
+import { useState } from 'react';
+
+
+import  ModalNew from '../../Modal/Modal';
 
 
 const OrderInProgressCard = () => {
@@ -13,12 +16,23 @@ const OrderInProgressCard = () => {
 		setOpen(true);
 	};
 
+	const handlerModalClose = () => {
+		console.log('cerrar')
+		setOpen(false);
+	};
+
 	return(
 		<div className='cardOrder'  id="OrderCard" onClick= {handlerModalOpen}>
 			<div className='orderNumber'>Orden 58</div>
-			<div className ='clientName'>User Name</div>
+			<div className ='clientName'>clientName</div>
 			{open &&
-				<Modal />
+				<div className="modal-container">
+						<button className="modal-close" onClick={handlerModalClose}>X</button>
+					<div className="modal-content">
+						<TemplateModalInProgress/>
+					</div>
+				</div>
+				
 			}
 		</div>
 	)
@@ -26,13 +40,3 @@ const OrderInProgressCard = () => {
 
 export default OrderInProgressCard;
 
-const OpenCardOrder = () => {
-	openModal(TemplateModalInProgress);
-	console.log('Estoy vivo, hola');
-	// ReactDOM.render(
-	// 	<React.StrictMode>
-	// 		<TemplateModalInProgress />
-	// 	</React.StrictMode>,
-	// 	document.getElementById('root')
-	// );
-}

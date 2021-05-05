@@ -9,7 +9,6 @@ const WaitersMain = () => {
 		<div className="mainWaiters-container">
 			<Header/>
 			<OrderCardsContainer/>
-			<Modal />
 		</div>
 	)
 }

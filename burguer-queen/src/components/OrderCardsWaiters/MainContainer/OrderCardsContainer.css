@@ -69,8 +69,10 @@
 		
 	}
 	.cards-container{
-		background-color: cornflowerblue;
 		margin-top: 1%;
+	}
+	.newOrder-buttom{ 
+		font-size: medium;
 	}
 }
 
@@ -88,8 +90,7 @@
 		bottom: 10%;
 		right: 3%;
 	}
-	.cards-container{
-		background-color: cornflowerblue;
+	.cards-container {
 		margin-top: 1%;
 	}
 

@@ -1,25 +1,21 @@
-//import logo from './logo.svg';
+import React from 'react';
 import './style/App.css';
-// import Login from './pages/Login/Login';
-// import WaitersMain from './pages/WaitersMain/WaitersMain';
-// import Modal from './components/Modal/Modal';
-import OrderInProgressCard from './components/OrderCardsWaiters/OrderStatus/OrderInProgressCard';
+
+import WaitersMain from './pages/WaitersMain/WaitersMain';
 
 function App() {
   return (
     <div className="App">
-				<OrderInProgressCard />
+				<WaitersMain />
     </div>
   );
 }
 
 export default App;
 
-// //import logo from './logo.svg';
+
+
 // import './style/App.css';
-// // import Login from './pages/Login/Login';
-// // import WaitersMain from './pages/WaitersMain/WaitersMain';
-// // import Modal from './components/Modal/Modal';
 // import React, { useState } from "react";
 // import Modal from 'react-modal';
 
