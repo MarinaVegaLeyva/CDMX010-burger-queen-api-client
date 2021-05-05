@@ -1,0 +1,21 @@
+.wrapped {
+  width: 537px;
+  height: 358px;
+  left: 32px;
+  top: 711px;
+  border: 5px solid #d8d3e1;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding-top: 23px;
+  border-top-width: 50px;
+}
+
+.editIcon {
+  width: 30px;
+  margin-left: 40px;
+}
+
+.deleteIcon {
+  height: 34px;
+  margin-left: 30px;
+}
