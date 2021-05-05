@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+.LoginForm {
+	background-color: transparent;
+	display: flex;
+	flex-direction: column;
+	padding: 5%;
+	align-items: center;
+	width: 60%;
+	min-height: auto;
+}
+
+.loginInput {
+	color: white;
+	font-family:  'Nanum Pen Script';
+	font-size: xx-large;
+	text-align: center;
+	background-color: rgba(122, 118, 118, 0.54);
+	margin-bottom: 8%;
+	height: 5vh;
+	width: 70%;
+	border-color: rgba(115, 71, 142, 1);
+	border-style:solid;
+	border-width: 3px;
+}
+.loginInput::placeholder{
+	font-family:  'Lacquer';
+	font-size: x-large;
+	color: white;
+	text-align: center
+}
+
+.sendButton {
+	background-color: rgba(90, 46, 112, 1);	
+	color: white;
+	font-family:  'Lacquer', cursive;
+	font-size: x-large;
+	padding: 1%;
+	height:7vh;
+	width: 45%;
+	border-radius: 10%;
+	border-color: rgb(90, 46, 112, 1) ;
+	text-align: center;
+	margin-top: 10%;
+}
+
+.sendButton:hover {
+	background-color: rgb(64, 7, 102);
+}
+
+
+@media (min-width: 800px) and (orientation: landscape){
+	.loginInput{
+		margin-bottom: 5%;
+		width: 55%;
+	}
+	.sendButton {
+		margin-top: 5%;
+		width: 30%;
+		height: 8vh;
+	}
+}
+
+@media (max-width: 400px) {
+	.LoginForm {
+		width: 100%;
+		padding: 5% 0% 5% 0%;	
+	}
+
+	.loginInput {
+		font-size: x-large;
+		height: 5vh;
+	}
+
+	.loginInput::placeholder{
+		font-size: large;
+	}
+
+	.sendButton {
+		font-size: larger;
+	}
+}
+
+/* @media(orientation: landscape) and (max-width: 799px){
+	.LoginForm {
+		padding: 3%;
+	}
+
+	.loginInput{
+		font-size: large;
+		margin-bottom: 5%;
+		width: 55%;
+	}
+	.sendButton {
+		font-size: larger;
+		margin-top: 2%;
+		width: 30%;
+		height: 10vh;
+	}
+} */
+
+@media(orientation: landscape) and (max-width: 799px){
+	.LoginForm {
+		width: 40%;
+		padding: 0%;
+	}
+
+	.loginInput{
+		font-size: x-large;
+		width: 75%;
+		height: 7.5vh;
+	}
+
+	.loginInput::placeholder{
+		font-size: large;
+	}
+
+	.sendButton {
+		font-size: larger;
+		width: 50%;
+		height: 10vh;
+	}
+}

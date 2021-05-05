@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+.cardOrder{
+	background-color: rgba(216, 211, 225, 1);
+	width: 300px;
+	height: 170px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	cursor: pointer;	
+}
+
+.cardOrder:hover{
+	background-color: rgba(115, 71, 142, 1);
+}
+
+.orderNumber{
+	font-family: 'Bungee';
+	font-size: 36px;
+	color: black;
+}
+.clientName{
+	font-family: 'Lato';
+	font-size: 24px;
+	color:black;
+}
+
+
+@media(orientation: landscape) and (max-width: 700px){
+	.cardOrder{
+		width: 30%;
+		height: 115px;
+		margin: 1% 2% 1% 2%;	
+	}
+
+	.orderNumber{
+		font-size: x-large;
+	}
+	.clientName{
+		font-size: larger;
+	}
+}
+
+@media(max-width: 400px) {
+	.cardOrder{
+		width: 50%;
+		height: 115px;
+		margin: 1% 2% 1% 2%;	
+	}
+	.orderNumber{
+		font-size: x-large;
+	}
+	.clientName{
+		font-size: medium;
+	}
+}
