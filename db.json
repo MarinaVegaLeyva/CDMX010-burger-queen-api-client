@@ -1,0 +1,134 @@
+{
+	"auth": [
+		"email",
+		"password"
+	],
+	"users": [
+		{
+			"id": "001",
+			"email": {"email":"", "password":""},
+			"roles": {
+				"admin": true,
+				"chef": false,
+				"waiter": false
+			}
+		},
+		{
+			"id": "002",
+			"email": {"email":"", "password":""},
+			"roles": {
+				"admin": false,
+				"chef": true,
+				"waiter": false
+			}
+		},
+		{
+			"id": "003",
+			"email": {"email":"", "password":""},
+			"roles": {
+				"admin": false,
+				"chef": false,
+				"waiter": true
+			}
+		}
+	],
+  "products": [
+    {
+      "id": 1,
+      "name": "Café Americano",
+      "price": 5,
+      "image": "https://vips.com.mx/img/2019/platillosdic/bebidas-cafe-americano.png",
+      "type": "Breakfast",
+      "dateEntry": "2021-04-29T13:13:34.441Z"
+    },
+    {
+      "id": 2,
+      "name": "Café con leche",
+      "price": 7,
+      "image": "https://trade.nespresso.es/cdn/breakfast-hub/articulo_2/images/coffee_2.png",
+      "type": "Breakfast",
+      "dateEntry": "2014-01-01T13:13:34.441Z"
+    },
+    {
+      "id": 3,
+      "name": "Sandwich de jamón y queso",
+      "price": 10,
+      "image": "https://1.bp.blogspot.com/-iO0ZbEB6TIs/WZruV0oFv3I/AAAAAAAHV3s/CHT5G7ymBW8p6T-wU2K4KqJJWlxwY7i4wCLcBGAs/s640/Sandwich.png",
+      "type": "Breakfast",
+      "dateEntry": "2014-01-01T13:13:34.441Z"
+    },
+    {
+      "id": 4,
+      "name": "Jugo de frutas natural",
+      "price": 7,
+      "image": "https://vips.com.mx/img/2019/platillosdic/jugo-naranja.png",
+      "type": "Breakfast",
+      "dateEntry": "2014-01-01T13:13:34.441Z"
+    },
+    {
+      "id": 5,
+      "name": "Hamburguesa simple",
+      "price": 10,
+      "image": "https://i.pinimg.com/originals/ae/65/64/ae6564b991daa5aa16a9c8a4172bd5d9.png",
+      "type": "Dinner",
+      "dateEntry": "2014-01-01T13:13:34.441Z"
+    },
+    {
+      "id": 6,
+      "name": "Hamburguesa doble",
+      "price": 15,
+      "image": "https://s3.eu-central-1.amazonaws.com/www.burgerking.com.mx/wp-content/uploads/sites/3/2021/02/24095740/1200x800_05_WhopperDobleConQueso-2-1.png",
+      "type": "Dinner",
+      "dateEntry": "2014-01-01T13:13:34.441Z"
+    },
+    {
+      "id": 7,
+      "name": "Papas fritas",
+      "price": 5,
+      "image": "https://d2j6dbq0eux0bg.cloudfront.net/images/12114129/1451076508.jpg",
+      "type": "Extra",
+      "dateEntry": "2014-01-01T13:13:34.441Z"
+    },
+    {
+      "id": 8,
+      "name": "Aros de cebolla",
+      "price": 5,
+      "image": "https://rapidogs.com/wp-content/uploads/2021/03/AROS-CEBOLLA.png",
+      "type": "Extra",
+      "dateEntry": "2014-01-01T13:13:34.441Z"
+    },
+    {
+      "id": 9,
+      "name": "Agua 500ml",
+      "price": 5,
+      "image": "https://salemmaonline.com.py/products/7840058002082.png?v=5",
+      "type": "Drink",
+      "dateEntry": "2014-01-01T13:13:34.441Z"
+    },
+    {
+      "id": 10,
+      "name": "Agua 750ml",
+      "price": 7,
+      "image": "https://images.rappi.com.mx/products/978261459-1611258807398.png?d=500x500",
+      "type": "Drink",
+      "dateEntry": "2014-01-01T13:13:34.441Z"
+    },
+    {
+      "id": 11,
+      "name": "Bebida/gaseosa 500ml",
+      "price": 7,
+      "image": "http://www.sabordeoaxaca.com/images/te3.png",
+      "type": "Drink",
+      "dateEntry": "2014-01-01T13:13:34.441Z"
+    },
+    {
+      "id": 12,
+      "name": "Bebida/gaseosa 750ml",
+      "price": 10,
+      "image": "https://i.pinimg.com/originals/7e/e4/f5/7ee4f588524d0b66fd309417e84d153d.png",
+      "type": "Drink",
+      "dateEntry": "2014-01-01T13:13:34.441Z"
+    }
+  ]
+
+}

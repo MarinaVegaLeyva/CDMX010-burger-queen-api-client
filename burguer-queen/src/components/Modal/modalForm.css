@@ -1,0 +1,45 @@
+.modal {
+  text-align: center;
+}
+.img {
+  width: 130px;
+  display: block;
+  margin: auto;
+}
+.inputForm {
+  font-family: lato;
+  display: block;
+  width: 100px;
+  height: 30px;
+  border: 1px solid #5a2e70;
+  box-sizing: border-box;
+  margin-top: 16px;
+  margin-left: 12px;
+}
+.specs {
+  font-family: lato;
+  margin: 20px;
+  width: 400px;
+  height: 84px;
+  background: #ffffff;
+  border: 1px solid #5a2e70;
+  margin-top: 0px;
+}
+.labelValue {
+  font-family: Lato;
+  font-size: 20px;
+}
+.label {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.buttonAdd {
+  width: 180px;
+  height: 50px;
+  background: #5a2e70;
+  border-radius: 15px;
+  color: #ffffff;
+  font-family: "Bungee";
+  font-size: 12px;
+}

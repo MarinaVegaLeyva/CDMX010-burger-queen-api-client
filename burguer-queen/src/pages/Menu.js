@@ -7,18 +7,23 @@ import Table from "../components/Table/Table";
 import Header from "../components/Header/Header";
 import Products from "../components/Products/Products";
 import Description from "../components/Description/Description";
-import './menu.css'
+import "./menu.css";
 
 function Menu() {
+
+  const ejemplo = (data) => {
+console.log("valor ",data);
+  }
   return (
     <div>
       <Header />
-        <Table />
-		<div className="contenedores">
+      <Table ejemplo={ejemplo} />
+      {/* <CustomExample /> */}
+      <div className="contenedores">
         <Products />
         <Description />
       </div>
-	  <button className='button'>Añadir orden</button>
+      <button className="button">Añadir orden</button>
     </div>
   );
 }
