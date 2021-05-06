@@ -1,3 +1,4 @@
+import React,{useState} from 'react';
 import Menu from "./pages/Menu";
 import Login from './pages/Login/Login';
 import WaitersMain from './pages/WaitersMain/WaitersMain';
@@ -13,6 +14,18 @@ import {
 
 
 function App() {
+  const [order, setOrder]=useState({
+    nombreCliente:"",
+    status:"pendiente",
+    items:[],
+    total:0
+  })
+
+  const handleAddProducts=(item)=>{
+    setOrder({...order, items:[...order.items, item]})
+  }
+
+
   return (
     <Router>
       <Switch>
@@ -21,7 +34,7 @@ function App() {
 				</Route>
         <Route path="/menu">
           <div>
-            <Menu />
+            <Menu handleAddProducts={handleAddProducts}/>
           </div>
         </Route>
         <Route path="/">

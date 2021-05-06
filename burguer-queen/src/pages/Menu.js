@@ -9,15 +9,13 @@ import Products from "../components/Products/Products";
 import Description from "../components/Description/Description";
 import "./menu.css";
 
-function Menu() {
-
-  const ejemplo = (data) => {
-console.log("valor ",data);
-  }
+function Menu({handleAddProducts}) {
   return (
     <div>
       <Header />
-      <Table ejemplo={ejemplo} />
+      <Table 
+      handleAddProducts={handleAddProducts}
+       />
       {/* <CustomExample /> */}
       <div className="contenedores">
         <Products />
