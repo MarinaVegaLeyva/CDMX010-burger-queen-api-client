@@ -4,7 +4,7 @@ import "./table.css";
 import BreakfastItem from "../BreakFastItem/Breakfast";
 import React, { useEffect, useState } from "react";
 
-const Table = () => {
+const Table = ({handleAddProducts}) => {
   let [data, setData] = useState();
   let [dinner, setDinner] = useState();
   let [extra, setExtra] = useState();
@@ -49,7 +49,11 @@ const Table = () => {
           <div className="contentTable">
             {data &&
               data.map((product) => (
-                <BreakfastItem product={product} key={product.id} />
+                <BreakfastItem
+                 product={product} 
+                 key={product.id} 
+                 handleAddProducts={handleAddProducts}
+                 />
               ))}
           </div>
         </TabPanel>
