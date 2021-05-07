@@ -11,6 +11,7 @@ import {
   // Link,
   // NavLink,
 } from "react-router-dom";
+import OrderCardsContainer from './components/OrderCardsWaiters/MainContainer/OrderCardsContainer';
 
 
 function App() {
@@ -25,7 +26,6 @@ function App() {
     setOrder({...order, items:[...order.items, item]})
   }
 
-
   return (
     <Router>
       <Switch>
@@ -34,7 +34,10 @@ function App() {
 				</Route>
         <Route path="/menu">
           <div>
-            <Menu handleAddProducts={handleAddProducts}/>
+            <Menu 
+            handleAddProducts={handleAddProducts}
+            order={order}
+            />
           </div>
         </Route>
         <Route path="/">

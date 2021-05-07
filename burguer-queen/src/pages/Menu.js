@@ -9,7 +9,7 @@ import Products from "../components/Products/Products";
 import Description from "../components/Description/Description";
 import "./menu.css";
 
-function Menu({handleAddProducts}) {
+function Menu({handleAddProducts,order}) {
   return (
     <div>
       <Header />
@@ -18,7 +18,9 @@ function Menu({handleAddProducts}) {
        />
       {/* <CustomExample /> */}
       <div className="contenedores">
-        <Products />
+        <Products
+        order={order}
+        />
         <Description />
       </div>
       <button className="button">Añadir orden</button>
