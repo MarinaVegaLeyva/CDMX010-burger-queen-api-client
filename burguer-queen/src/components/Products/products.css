@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
 .wrapped {
   width: 537px;
   height: 358px;
@@ -6,7 +9,7 @@
   border: 5px solid #d8d3e1;
   box-sizing: border-box;
   border-radius: 5px;
-  padding-top: 23px;
+  padding: 23px 5% 2% 5%;
   border-top-width: 50px;
 }
 
@@ -18,4 +21,7 @@
 .deleteIcon {
   height: 34px;
   margin-left: 30px;
+}
+.productWrapped {
+	font-family: 'Lato';
 }

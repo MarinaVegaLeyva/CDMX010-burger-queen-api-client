@@ -8,14 +8,12 @@ const Products = ({ order }) => {
   return (
     <div className="wrapped">
       {order.items.map((product) => {
-         return (
-            <h3>hola
-                {product.amount}
-                {product.id}
-            <img className="editIcon" src={editPicture} alt="editPicture" />
-            <img className="deleteIcon" src={deltePicture} alt="deltePicture" />
+				return (
+            <h3 className="productWrapped">{product.amount} {product.name} $ {product.price}
+							<img className="editIcon" id={'editProduct' + product.id} src={editPicture} alt="editPicture" onClick={()=>console.log('edit')}/>
+							<img className="deleteIcon" id={'deleteProduct' + product.id} src={deltePicture} alt="deltePicture" onClick={()=>console.log('delete')} />
             </h3>
-         )
+				)
       })}
     </div>
   );
@@ -23,3 +21,6 @@ const Products = ({ order }) => {
 
 export default Products;
 
+const deleteProductOrder = (order, product) => {
+	order.items.filter((item) => item.id !== product.id)
+}
