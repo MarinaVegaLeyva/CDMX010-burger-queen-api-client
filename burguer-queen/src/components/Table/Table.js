@@ -1,7 +1,7 @@
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 //import "react-tabs/style/react-tabs.css";
 import "./table.css";
-import BreakfastItem from "../BreakFastItem/Breakfast";
+import ProductCard from "../ProductCard/ProductCard";
 import React, { useEffect, useState } from "react";
 
 const Table = ({handleAddProducts}) => {
@@ -49,7 +49,7 @@ const Table = ({handleAddProducts}) => {
           <div className="contentTable">
             {data &&
               data.map((product) => (
-                <BreakfastItem
+                <ProductCard
                  product={product} 
                  key={product.id} 
                  handleAddProducts={handleAddProducts}
@@ -61,17 +61,26 @@ const Table = ({handleAddProducts}) => {
           <div className="contentTable">
             {dinner &&
               dinner.map((product) => (
-                <BreakfastItem product={product} key={product.id} />
+                <ProductCard 
+								product={product} 
+								key={product.id}
+								handleAddProducts={handleAddProducts} />
               ))}
             <h2>Acompañamientos</h2>
             {extra &&
               extra.map((product) => (
-                <BreakfastItem product={product} key={product.id} />
+                <ProductCard 
+								product={product} 
+								key={product.id}
+								handleAddProducts={handleAddProducts}/>
               ))}
             <h2>Para tomar</h2>
             {drink &&
               drink.map((product) => (
-                <BreakfastItem product={product} key={product.id} />
+                <ProductCard 
+								product={product} 
+								key={product.id}
+								handleAddProducts={handleAddProducts}/>
               ))}
           </div>
         </TabPanel>

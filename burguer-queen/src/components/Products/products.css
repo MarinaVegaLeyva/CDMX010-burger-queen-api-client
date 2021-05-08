@@ -25,3 +25,16 @@
 .productWrapped {
 	font-family: 'Lato';
 }
+
+.total {
+  height: 73.5px;
+  left: 577.01px;
+  top: 1012.5px;
+  background: #ffffff;
+  border: 5px solid #d8d3e1;
+  border-radius: 5px;
+  font-family: Bungee;
+  text-align: center;
+  color: #000000;
+  margin-top: 275px;
+}
