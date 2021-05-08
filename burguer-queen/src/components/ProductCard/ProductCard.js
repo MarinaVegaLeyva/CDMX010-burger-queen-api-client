@@ -1,9 +1,9 @@
 import { CustomDialog } from 'react-st-modal';
 import ModalForm from '../Modal/ModalForm'
-import "./breakfastItem.css";
+import "./ProductCard.css";
 
 
-const BreakfastItem = (props) => {  
+const ProductCard = (props) => {  
   return (
     <div className='contentItem' onClick={async () => {
       const result = await CustomDialog(
@@ -22,4 +22,4 @@ const BreakfastItem = (props) => {
 };
 
 
-export default BreakfastItem;
+export default ProductCard;

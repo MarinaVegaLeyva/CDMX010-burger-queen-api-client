@@ -25,6 +25,10 @@ function App() {
   const handleAddProducts=(item)=>{
     setOrder({...order, items:[...order.items, item]})
   }
+	
+	const handleDeleteProducts = (arrItems) => {
+		setOrder({...order, items: arrItems})
+	}
 
   return (
     <Router>
@@ -37,6 +41,7 @@ function App() {
             <Menu 
             handleAddProducts={handleAddProducts}
             order={order}
+						handleDeleteProducts = {handleDeleteProducts}
             />
           </div>
         </Route>
