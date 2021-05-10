@@ -58,5 +58,4 @@ const CustomExample = () => {
   );
 }
 
-
 export default CustomExample;

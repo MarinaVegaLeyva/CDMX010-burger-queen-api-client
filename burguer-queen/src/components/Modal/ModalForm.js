@@ -8,10 +8,10 @@ function ModalForm(props) {
   
   const [addProduct, setAddProduct ]=useState({
     id:props.data.product.id,
-		name: props.data.product.name,
+		product: props.data.product.name,
     price:props.data.product.price,
     specs:'',
-    amount:''
+    qty:''
   })
 
   const addPoducts = (event)=>{
@@ -35,7 +35,7 @@ function ModalForm(props) {
       <img className="img" src={props.data.product.image} alt="Img Logo" />
       <div className='label'>
       <h3 className="labelValue">Cantidad</h3>
-      <input type="number" className="inputForm" id="amount" name="amount" onChange={addPoducts} pattern="[0,9]{0,13}" required="required" min={1}/>
+      <input type="number" className="inputForm" id="amount" name="qty" onChange={addPoducts} pattern="[0,9]{0,13}" required="required" min={1}/>
       </div>
       <h3 className="labelValue">Especificaciones</h3>
       <textarea className="specs" id="specs" name="specs" onChange={addPoducts}></textarea>

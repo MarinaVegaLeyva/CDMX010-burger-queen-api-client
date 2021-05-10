@@ -129,6 +129,21 @@
       "type": "Drink",
       "dateEntry": "2014-01-01T13:13:34.441Z"
     }
-  ]
+  ],
+	"orders": [
+		{"id": "1",
+			"userId":"",
+			"client":"",
+			"products": [
+				{
+					"qty" : 0,
+					"product" : "name"
+				}
+			],
+			"status" : "pending",
+			"dateEntry": "10-05-2021",
+			"dateProcessed":"??"
+		}
+	]
 
 }
