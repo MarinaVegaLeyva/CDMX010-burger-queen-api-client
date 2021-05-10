@@ -7,10 +7,10 @@ const Products = ({ order, handleDeleteProducts}) => {
   return (
 		<>
     <div className="wrapped">
-      {order.items.map((product) => {
-				{total += product.amount * product.price}
+      {order.products.map((product) => {
+				{total += product.qty * product.price}
 				return (
-					<h3 key={product.id} className="productWrapped">{product.amount} {product.name} $ {product.price}
+					<h3 key={product.id} className="productWrapped">{product.qty} {product.product} $ {product.price}
 						<img className="editIcon" src={editPicture} alt="editPicture" onClick={()=>console.log('edit')}/>
 						<img className="deleteIcon" src={deltePicture} alt="deltePicture" onClick={()=>deleteProductOrder(order, product,handleDeleteProducts)} />
           </h3>
@@ -25,6 +25,8 @@ const Products = ({ order, handleDeleteProducts}) => {
 export default Products;
 
 const deleteProductOrder = (order, product,handleDeleteProducts) => {
-	const deleteProduct=order.items.filter((item) => item.id !== product.id);
+	const deleteProduct=order.products.filter((item) => item.id !== product.id);
 	handleDeleteProducts(deleteProduct)
 }
+
+
