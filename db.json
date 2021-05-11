@@ -1,37 +1,46 @@
 {
-	"auth": [
-		"email",
-		"password"
-	],
-	"users": [
-		{
-			"id": "001",
-			"email": {"email":"", "password":""},
-			"roles": {
-				"admin": true,
-				"chef": false,
-				"waiter": false
-			}
-		},
-		{
-			"id": "002",
-			"email": {"email":"", "password":""},
-			"roles": {
-				"admin": false,
-				"chef": true,
-				"waiter": false
-			}
-		},
-		{
-			"id": "003",
-			"email": {"email":"", "password":""},
-			"roles": {
-				"admin": false,
-				"chef": false,
-				"waiter": true
-			}
-		}
-	],
+  "auth": [
+    "email",
+    "password"
+  ],
+  "users": [
+    {
+      "id": "001",
+      "email": {
+        "email": "",
+        "password": ""
+      },
+      "roles": {
+        "admin": true,
+        "chef": false,
+        "waiter": false
+      }
+    },
+    {
+      "id": "002",
+      "email": {
+        "email": "",
+        "password": ""
+      },
+      "roles": {
+        "admin": false,
+        "chef": true,
+        "waiter": false
+      }
+    },
+    {
+      "id": "003",
+      "email": {
+        "email": "",
+        "password": ""
+      },
+      "roles": {
+        "admin": false,
+        "chef": false,
+        "waiter": true
+      }
+    }
+  ],
   "products": [
     {
       "id": 1,
@@ -130,20 +139,56 @@
       "dateEntry": "2014-01-01T13:13:34.441Z"
     }
   ],
-	"orders": [
-		{"id": "1",
-			"userId":"",
-			"client":"",
-			"products": [
-				{
-					"qty" : 0,
-					"product" : "name"
-				}
-			],
-			"status" : "pending",
-			"dateEntry": "10-05-2021",
-			"dateProcessed":"??"
-		}
-	]
-
+  "orders": [
+    {
+      "id": "1",
+      "userId": "",
+      "client": "",
+      "products": [
+        {
+          "qty": 0,
+          "product": "name"
+        }
+      ],
+      "status": "delivered",
+      "dateEntry": "10-05-2021",
+      "dateProcessed": "??"
+    },
+    {
+      "id": "D9mAQIe",
+      "userId": "",
+      "client": "Marina Vega",
+      "products": [
+        {
+          "id": 2,
+          "product": "Café con leche",
+          "price": 7,
+          "specs": "",
+          "qty": "7"
+        }
+      ],
+      "status": "pending",
+      "dateEntry": "",
+      "dateProcessed": "??",
+      "total": 0
+    },
+    {
+      "id": "Rxs-DEf",
+      "userId": "",
+      "client": "Laura Beltran",
+      "products": [
+        {
+          "id": 2,
+          "product": "Café con leche",
+          "price": 7,
+          "specs": "",
+          "qty": "7"
+        }
+      ],
+      "status": "pending",
+      "dateEntry": "2021-05-11T18:54:39.735Z",
+      "dateProcessed": "??",
+      "total": 0
+    }
+  ]
 }

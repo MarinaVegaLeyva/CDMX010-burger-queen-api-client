@@ -2,7 +2,7 @@ import "./products.css";
 import editPicture from "../../../src/assets/img/editar.png";
 import deltePicture from "../../../src/assets/img/eliminar.png";
 
-const Products = ({ order, handleDeleteProducts,handleAddInfoOrder}) => {
+const Products = ({ order, handleDeleteProducts, handleAddInfoOrder}) => {
 	let total = 0;
   return (
 		<>
@@ -27,6 +27,7 @@ export default Products;
 const deleteProductOrder = (order, product,handleDeleteProducts) => {
 	const deleteProduct=order.products.filter((item) => item.id !== product.id);
 	handleDeleteProducts(deleteProduct)
+	console.log(order)
 }
 
 
