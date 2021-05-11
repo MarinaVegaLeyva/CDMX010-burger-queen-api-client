@@ -150,14 +150,14 @@
           "product": "name"
         }
       ],
-      "status": "pending",
+      "status": "delivered",
       "dateEntry": "10-05-2021",
       "dateProcessed": "??"
     },
     {
       "id": "D9mAQIe",
       "userId": "",
-      "client": "lll",
+      "client": "Marina Vega",
       "products": [
         {
           "id": 2,
@@ -175,7 +175,7 @@
     {
       "id": "Rxs-DEf",
       "userId": "",
-      "client": "lll",
+      "client": "Laura Beltran",
       "products": [
         {
           "id": 2,

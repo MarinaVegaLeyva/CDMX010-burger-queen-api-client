@@ -2,37 +2,11 @@ import React from 'react';
 import './OrderInProgressCard.css';
 import TemplateModalInProgress from '../OrderModalTemplates/TemplateModalInProgress';
 
-
-import { useState } from 'react';
-
-
-import  ModalNew from '../../Modal/Modal';
-
-
-const OrderInProgressCard = () => {
-	const [open, setOpen] = useState(false);
-
-	const handlerModalOpen = () => {
-		setOpen(true);
-	};
-
-	const handlerModalClose = () => {
-		console.log('cerrar')
-		setOpen(false);
-	};
-
+const OrderInProgressCard = ({order}) => {
 	return(
-		<div className='cardOrder'  id="OrderCard" onClick= {handlerModalOpen}>
-			<div className='orderNumber'>Orden 58</div>
-			<div className ='clientName'>clientName</div>
-			{open &&
-				<div className="modal-container">
-						<button className="modal-close" onClick={handlerModalClose}>X</button>
-					<div className="modal-content">
-						<TemplateModalInProgress/>
-					</div>
-				</div>
-			}
+		<div className='cardOrder'>
+			<div className='orderNumber'>Orden</div>
+			<div className ='clientName'>{order.client}</div>
 		</div>
 	)
 }
