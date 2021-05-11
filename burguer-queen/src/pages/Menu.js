@@ -5,20 +5,38 @@ import Products from "../components/Products/Products";
 import "./menu.css";
 
 
-const addOrderData = (order, handleAddInfoOrder) => {
-	console.log('subir al json', order);
-	const date = new Date();
-	handleAddInfoOrder('dateEntry',date);
-  
-}
 
-const addClientName= (handleAddInfoOrder) =>{
-	let name=document.getElementById('name').value;
-  handleAddInfoOrder('client', name);
-}
 
 
 function Menu({handleAddProducts,order, handleDeleteProducts,handleAddInfoOrder}) {
+
+	
+	
+	const postOrder= () => {
+		const options = {
+			method: 'POST',
+			body: JSON.stringify(order),
+			headers: {
+				'Content-Type': 'application/json'
+			}
+		};
+		
+		fetch('http://localhost:3004/orders', options)
+			.then(res => res.json())
+			.then(res => console.log(res));
+	}
+	
+	const addOrderData = () => {
+		console.log('subir al json');
+		postOrder();
+	}
+	const addClientName= () =>{
+		let name=document.getElementById('name').value;
+		handleAddInfoOrder('client', name);
+		const date = new Date();
+		handleAddInfoOrder('dateEntry',date);
+	}
+
   return (
     <div>
       <Header />
@@ -35,10 +53,10 @@ function Menu({handleAddProducts,order, handleDeleteProducts,handleAddInfoOrder}
 				</div>
 				<form onSubmit={(e)=> {
 					e.preventDefault();
-					addOrderData(order, handleAddInfoOrder);
+					addOrderData();
 				}}>
 					<label>Nombre del cliente :</label> 
-          <input type="text" id="name" onChange = {()=>addClientName(handleAddInfoOrder)}/>
+          <input type="text" id="name" onChange = {addClientName}/>
 					<button className="button">Añadir orden</button>
 				</form>
 			</div>
