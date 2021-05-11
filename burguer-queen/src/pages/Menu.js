@@ -1,20 +1,20 @@
 import React from "react";
-
-/* import BreakfastItem  from '../components/breakFastItem/menuItem';
-import Order  from '../components/order/order';
-import AddItem from '../components/addItem/addItem' */
 import Table from "../components/Table/Table";
 import Header from "../components/Header/Header";
 import Products from "../components/Products/Products";
 import "./menu.css";
 
 
-const addOrderData = (order, event) => {
-	console.log('subir al json')
+const addOrderData = (order,handleAddInfoOrder) => {
+	console.log('subir al json');
+  let name=document.getElementById('name').value;
+  handleAddInfoOrder('client',name);
+  console.log(order);
+  
 }
 
 
-function Menu({handleAddProducts,order, handleDeleteProducts}) {
+function Menu({handleAddProducts,order, handleDeleteProducts,handleAddInfoOrder}) {
   return (
     <div>
       <Header />
@@ -26,13 +26,15 @@ function Menu({handleAddProducts,order, handleDeleteProducts}) {
         <Products
         order={order}
 				handleDeleteProducts = {handleDeleteProducts}
+        handleAddInfoOrder={handleAddInfoOrder}
         />
 				</div>
 				<form onSubmit={(e)=> {
 					e.preventDefault();
-					addOrderData(order)
+					addOrderData(order,handleAddInfoOrder)
 				}}>
-					<label>Nombre del cliente :</label> <input type="text"/>
+					<label>Nombre del cliente :</label> 
+          <input type="text" id="name"/>
 					<button className="button">Añadir orden</button>
 				</form>
 			</div>

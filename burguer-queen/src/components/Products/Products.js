@@ -2,7 +2,7 @@ import "./products.css";
 import editPicture from "../../../src/assets/img/editar.png";
 import deltePicture from "../../../src/assets/img/eliminar.png";
 
-const Products = ({ order, handleDeleteProducts}) => {
+const Products = ({ order, handleDeleteProducts,handleAddInfoOrder}) => {
 	let total = 0;
   return (
 		<>
