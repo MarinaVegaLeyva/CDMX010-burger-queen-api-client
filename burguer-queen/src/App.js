@@ -28,8 +28,8 @@ function App() {
     setOrder({ ...order, products: [...order.products, item] });
   };
 
-  const handleAddInfoOrder = ( propiedad, item ) => {
-    setOrder({ ...order, [propiedad]:item });
+  const handleAddInfoOrder = (prop, item) => {
+    setOrder({ ...order, [prop]: item });
   };
   const handleDeleteProducts = (arrItems) => {
     setOrder({ ...order, products: arrItems });
