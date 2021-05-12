@@ -11,6 +11,7 @@ import {
   // NavLink,
 } from "react-router-dom";
 import OrderCardsContainer from "./components/OrderCardsWaiters/MainContainer/OrderCardsContainer";
+import Kitchen from "./pages/Kitchen/Kitchen";
 
 function App() {
   const [order, setOrder] = useState({
@@ -50,6 +51,9 @@ function App() {
   return (
     <Router>
       <Switch>
+				<Route path="/kitchen">
+          <Kitchen />
+					</Route>
         <Route path="/waitersmain">
           <WaitersMain />
         </Route>

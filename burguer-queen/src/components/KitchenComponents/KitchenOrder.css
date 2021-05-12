@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+.kitchenOrder-container {
+	background-color: rgba(216, 211, 225, 1);
+	padding: 1% 4% 4% 4%;
+	margin: 5%;
+}
+
+.idAndTimer-container {
+	display: flex;
+	flex-direction: row;
+	padding: 2%;
+	font-size: large;
+}
+
+.k-orderNum {
+	width: 80%;
+}
+
+.k-orderItems-Container {
+	margin: 3%;
+	width: 100%;
+}
+
+.k-item-container {
+	background-color: white;
+	font-family: 'Lato';
+	font-size: xx-large;
+	display: flex;
+	flex-direction: row;
+	padding-left: 3%;
+	width: 90%;
+
+}
+.kOrder-items {
+	width: 80%;
+}
+
+.kOrder-qty {
+	text-align: center;
+	width: 10%;
+}
+
+.doneButton-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.doneOrder-button {
+	background-color: rgba(90, 46, 112, 1);	
+	color: white;
+	font-family:  'Lacquer';
+	font-size: x-large;
+	height:5vh;
+	width: 25%;
+	border-radius: 10%;
+	text-align: center;
+	cursor: pointer;
+}
+
+.doneOrder-button:hover{
+		background-color: rgb(64, 7, 102);
+	}

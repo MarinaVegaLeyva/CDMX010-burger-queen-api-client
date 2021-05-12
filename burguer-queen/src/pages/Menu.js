@@ -29,8 +29,8 @@ function Menu({ handleAddProducts, order, handleDeleteProducts, handleAddInfoOrd
 	const addClientName = () => {
 		let name = document.getElementById('name').value;
 		handleAddInfoOrder('client', name);
-		const date = new Date();
-		handleAddInfoOrder('dateEntry', date);
+		// const date = new Date();
+		// handleAddInfoOrder('dateEntry', date);
 	}
 
 	return (
