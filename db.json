@@ -170,7 +170,7 @@
       "status": "pending",
       "dateEntry": "",
       "dateProcessed": "??",
-      "total": 0
+      "total": 49
     },
     {
       "id": "Rxs-DEf",
@@ -187,6 +187,56 @@
       ],
       "status": "delivering",
       "dateEntry": "2021-05-11T18:54:39.735Z",
+      "dateProcessed": "??",
+      "total": 49
+    },
+    {
+      "id": "-3iNp4f",
+      "userId": "",
+      "client": "Omar",
+      "products": [
+        {
+          "id": 2,
+          "product": "Café con leche",
+          "price": 7,
+          "specs": "",
+          "qty": "3"
+        },
+        {
+          "id": 4,
+          "product": "Jugo de frutas natural",
+          "price": 7,
+          "specs": "",
+          "qty": "1"
+        }
+      ],
+      "status": "pending",
+      "dateEntry": "",
+      "dateProcessed": "??",
+      "total": 0
+    },
+    {
+      "id": "js8Tiow",
+      "userId": "",
+      "client": "eeee",
+      "products": [
+        {
+          "id": 4,
+          "product": "Jugo de frutas natural",
+          "price": 7,
+          "specs": "2",
+          "qty": "2"
+        },
+        {
+          "id": 3,
+          "product": "Sandwich de jamón y queso",
+          "price": 10,
+          "specs": "3",
+          "qty": "3"
+        }
+      ],
+      "status": "pending",
+      "dateEntry": "",
       "dateProcessed": "??",
       "total": 0
     }

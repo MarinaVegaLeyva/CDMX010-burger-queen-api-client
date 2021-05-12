@@ -10,7 +10,6 @@ import {
   // Link,
   // NavLink,
 } from "react-router-dom";
-import OrderCardsContainer from "./components/OrderCardsWaiters/MainContainer/OrderCardsContainer";
 
 function App() {
   const [order, setOrder] = useState({
@@ -31,6 +30,7 @@ function App() {
   const handleAddInfoOrder = (prop, item) => {
     setOrder({ ...order, [prop]: item });
   };
+
   const handleDeleteProducts = (arrItems) => {
     setOrder({ ...order, products: arrItems });
   };

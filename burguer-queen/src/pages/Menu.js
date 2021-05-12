@@ -29,8 +29,8 @@ function Menu({ handleAddProducts, order, handleDeleteProducts, handleAddInfoOrd
 	const addClientName = () => {
 		let name = document.getElementById('name').value;
 		handleAddInfoOrder('client', name);
-		const date = new Date();
-		handleAddInfoOrder('dateEntry', date);
+		// const date = new Date();
+		// handleAddInfoOrder('dateEntry', date);
 	}
 
 	return (
@@ -50,12 +50,13 @@ function Menu({ handleAddProducts, order, handleDeleteProducts, handleAddInfoOrd
 			<form onSubmit={(e) => {
 				e.preventDefault();
 				addOrderData();
+        console.log('order',order);
 				history.push("/waitersmain");
 				handleResetOrder()
 			}}>
 				<label>Nombre del cliente :</label>
 				<input type="text" id="name" onChange={addClientName} />
-				<button className="button">Añadir orden</button>
+				<button className="button" >Añadir orden</button>
 			</form>
 		</div>
 	);
