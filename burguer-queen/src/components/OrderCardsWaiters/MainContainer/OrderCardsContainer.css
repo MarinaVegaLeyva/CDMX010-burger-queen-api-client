@@ -26,6 +26,8 @@
 	margin-right: 10%;
 	position: absolute;
 	top: 30%;
+	display: flex;
+	flex-wrap: wrap;
 }
 .newOrder-button{
 	background-color: rgba(90, 46, 112, 1);	

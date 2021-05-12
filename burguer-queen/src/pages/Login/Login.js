@@ -1,4 +1,4 @@
- import React from 'react';
+import React from 'react';
 import FormLogin from '../../components/FormLogin/FormLogin';
 import LoginLogo from '../../components/LoginLogo/LoginLogo';
 import './Login.css';
