@@ -5,6 +5,7 @@ import './WaitersMain.css';
 
 const WaitersMain = () => {
 	const [pending, setPending] = useState();
+	const [delivering, setDelivering] = useState();
 	let getData = async () => {
     let url = "http://localhost:3004/orders";
     let getFectchData = await fetch(url).then((resul) => resul.json());
@@ -12,7 +13,11 @@ const WaitersMain = () => {
       (element) => element.status === "pending"
     );
 		setPending(filterPending);
-		console.log(getFectchData)
+
+		let filterDelivering = getFectchData.filter(
+      (element) => element.status === "delivering"
+    );
+		setDelivering(filterDelivering);
   };
 
   useEffect(() => {
@@ -23,6 +28,7 @@ const WaitersMain = () => {
 			<Header/>
 			<OrderCardsContainer
 			pending={pending}
+			delivering={delivering}
 			/>
 		</div>
 	)
