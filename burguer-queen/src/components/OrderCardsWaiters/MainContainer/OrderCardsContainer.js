@@ -1,7 +1,9 @@
+import { useHistory} from "react-router-dom";
 import OrderInProgressCard from '../OrderStatus/OrderInProgressCard';
 import './OrderCardsContainer.css';
 
 const OrderCardsContainer = ({pending}) => {
+	const history = useHistory();
 	return(
 	<div className="waitersMain-orders">
 		<div className="waiterName">Meserx : Laura Beltran</div>
@@ -15,7 +17,7 @@ const OrderCardsContainer = ({pending}) => {
               ))}
 			
 		</div>
-		<button className="newOrder-button"> + Añadir Orden</button>
+		<button className="newOrder-button" onClick={()=> history.push("/menu")}> + Añadir Orden</button>
 	</div>
 	)
 }

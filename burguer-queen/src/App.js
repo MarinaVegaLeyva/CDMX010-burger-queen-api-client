@@ -34,6 +34,18 @@ function App() {
   const handleDeleteProducts = (arrItems) => {
     setOrder({ ...order, products: arrItems });
   };
+	const handleResetOrder = () =>{
+		setOrder({
+			id: "",
+			userId: "",
+			client: "",
+			products: [],
+			status: "pending",
+			dateEntry: "",
+			dateProcessed: "??",
+			total: 0,
+		})
+	}
 
   return (
     <Router>
@@ -48,6 +60,7 @@ function App() {
               order={order}
               handleDeleteProducts={handleDeleteProducts}
               handleAddInfoOrder={handleAddInfoOrder}
+							handleResetOrder={handleResetOrder}
             />
           </div>
         </Route>

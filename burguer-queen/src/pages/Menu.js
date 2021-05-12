@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useHistory} from "react-router-dom";
 import Table from "../components/Table/Table";
 import Header from "../components/Header/Header";
 import Products from "../components/Products/Products";
@@ -8,10 +9,8 @@ import "./menu.css";
 
 
 
-function Menu({handleAddProducts,order, handleDeleteProducts,handleAddInfoOrder}) {
-
-	
-	
+function Menu({handleAddProducts,order, handleDeleteProducts,handleAddInfoOrder, handleResetOrder}) {
+	const history = useHistory();
 	const postOrder= () => {
 		const options = {
 			method: 'POST',
@@ -54,6 +53,8 @@ function Menu({handleAddProducts,order, handleDeleteProducts,handleAddInfoOrder}
 				<form onSubmit={(e)=> {
 					e.preventDefault();
 					addOrderData();
+					history.push("/waitersmain");
+					handleResetOrder()
 				}}>
 					<label>Nombre del cliente :</label> 
           <input type="text" id="name" onChange = {addClientName}/>

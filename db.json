@@ -185,7 +185,7 @@
           "qty": "7"
         }
       ],
-      "status": "pending",
+      "status": "delivering",
       "dateEntry": "2021-05-11T18:54:39.735Z",
       "dateProcessed": "??",
       "total": 0
