@@ -170,7 +170,7 @@
       "status": "pending",
       "dateEntry": "",
       "dateProcessed": "??",
-      "total": 0
+      "total": 49
     },
     {
       "id": "Rxs-DEf",
@@ -188,7 +188,7 @@
       "status": "delivering",
       "dateEntry": "2021-05-11T18:54:39.735Z",
       "dateProcessed": "??",
-      "total": 0
+      "total": 49
     },
     {
       "id": "wyzhOxd",
@@ -227,7 +227,7 @@
       "status": "pending",
       "dateEntry": "2021-05-12T02:48:58.494Z",
       "dateProcessed": "??",
-      "total": 0
+      "total": 61
     },
     {
       "id": "ZE3jm4h",
@@ -245,7 +245,7 @@
       "status": "pending",
       "dateEntry": "2021-05-12T04:24:17.503Z",
       "dateProcessed": "??",
-      "total": 0
+      "total": 42
     },
     {
       "id": "fuGfH56",
@@ -277,7 +277,7 @@
       "status": "pending",
       "dateEntry": "",
       "dateProcessed": "??",
-      "total": 0
+      "total": 27
     }
   ]
 }
